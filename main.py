@@ -10,17 +10,17 @@ app = Flask(__name__)
 
 
 # load databasedataset===================================
-sym_des = pd.read_csv(r"C:\Users\satya\PycharmProjects\PythonProject\Personalized Medical System\datasets\symtoms_df.csv")
-precautions = pd.read_csv(r"C:\Users\satya\PycharmProjects\PythonProject\Personalized Medical System\datasets\precautions_df.csv")
-workout = pd.read_csv(r"C:\Users\satya\PycharmProjects\PythonProject\Personalized Medical System\datasets\workout_df.csv")
-description = pd.read_csv(r"C:\Users\satya\PycharmProjects\PythonProject\Personalized Medical System\datasets\description.csv")
-medications = pd.read_csv(r'C:\Users\satya\PycharmProjects\PythonProject\Personalized Medical System\datasets\medications.csv')
-diets = pd.read_csv(r"C:\Users\satya\PycharmProjects\PythonProject\Personalized Medical System\datasets\diets.csv")
+sym_des = pd.read_csv(r"C:\Users\DELL\PycharmProjects\PythonProject\Personalized Medical System\datasets\symtoms_df.csv")
+precautions = pd.read_csv(r"C:\Users\DELL\PycharmProjects\PythonProject\Personalized Medical System\datasets\precautions_df.csv")
+workout = pd.read_csv(r"C:\Users\DELL\PycharmProjects\PythonProject\Personalized Medical System\datasets\workout_df.csv")
+description = pd.read_csv(r"C:\Users\DELL\PycharmProjects\PythonProject\Personalized Medical System\datasets\description.csv")
+medications = pd.read_csv(r'C:\Users\DELL\PycharmProjects\PythonProject\Personalized Medical System\datasets\medications.csv')
+diets = pd.read_csv(r"C:\Users\DELL\PycharmProjects\PythonProject\Personalized Medical System\datasets\diets.csv")
 
 
 
 # load model===========================================
-svc = pickle.load(open(r"C:\Users\satya\PycharmProjects\PythonProject\Personalized Medical System\models\svc.pkl", "rb"))
+svc = pickle.load(open(r"C:\Users\DELL\PycharmProjects\PythonProject\Personalized Medical System\models\svc.pkl", "rb"))
 
 
 
@@ -124,5 +124,6 @@ def blog():
 
 
 if __name__ == '__main__':
+
 
     app.run(debug=True)
